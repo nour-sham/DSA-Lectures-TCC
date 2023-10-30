@@ -98,7 +98,7 @@ namespace Binary_Search_Homework // don't edit this line!!!
             right++;
         }
  
-        return count;
+       return count;
     
         }
     }
