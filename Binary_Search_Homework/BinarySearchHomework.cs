@@ -30,17 +30,18 @@ namespace Binary_Search_Homework // don't edit this line!!!
  
             if (key < arr[mid1]) {
  
-                return TernarySearch(arr,key,start, mid1 - 1 );
+            end = mid1 - 1;
             }
             else if (key > arr[mid2]) {
  
                 
-                return TernarySearch(arr,key,mid2 + 1, end);
+               start = mid2 + 1;
             }
             else {
  
                 
-                return TernarySearch(arr,key,mid1 + 1, mid2 - 1);
+                start = mid1 + 1;
+                end = mid2 - 1;
             }
         }
  
